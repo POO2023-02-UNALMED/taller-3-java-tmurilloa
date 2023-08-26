@@ -95,7 +95,7 @@ public class TV {
 	public boolean getEstado() {
 		return estado;
 	}
-	static public void setnumTV(int numTv) {
+	static public void setNumTV(int numTv) {
 		numTV = numTv;
 	}
 	static public int getNumTV() {
