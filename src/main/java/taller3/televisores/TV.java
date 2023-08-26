@@ -50,5 +50,22 @@ public class TV {
 		return control;
 	}
 	
-	
+	public void canalUp() {
+		if(estado == true)
+		{
+			if (canal < 120 && canal > 1)
+			{
+				volumen++ ;
+			}
+
+		}
+	}
+	public void canalDown() {
+		if(estado == true) {
+			if (canal < 120 && canal > 1)
+			{
+				volumen-- ; 
+			}
+		}
+	}
 }
