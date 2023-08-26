@@ -16,6 +16,51 @@ public class Control {
 	}
 	
 	public void turnOn() {
-		tv.set
+		tv.estado = true;
 	}
+	public void turnOff() {
+		tv.estado = false;
+	}
+	public void canalUp() {
+		if(tv.estado == true)
+		{
+			if (tv.canal < 120 && tv.canal >= 1)
+			{
+				tv.canal++ ;
+			}
+
+		}
+	}
+	public void canalDown() {
+		if(tv.estado == true) {
+			if (tv.canal <= 120 && tv.canal > 1)
+			{
+				tv.canal-- ; 
+			}
+		}
+	}
+	
+	public void volumenUp() {
+		if (tv.estado == true) {
+			if (tv.volumen < 7 && tv.volumen >= 0) 
+			{
+				tv.volumen++ ;
+			}
+		}
+	}
+	public void volumenDown() {
+		if (tv.estado == true) {
+			if (tv.volumen <= 7 && tv.volumen > 0) 
+			{
+				tv.volumen-- ;
+			}
+		}
+	}
+	public void setCanal(int canal) {
+		tv.setCanal(canal);
+	}
+	public void setVolumen(int volumen) {
+		tv.setVolumen(volumen);
+	}
+	
 }
