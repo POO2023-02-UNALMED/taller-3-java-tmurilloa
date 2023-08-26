@@ -42,7 +42,7 @@ public class Control {
 	
 	public void volumenUp() {
 		if (tv.estado == true) {
-			if (tv.volumen < 7 && tv.volumen >= 0) 
+			if (tv.volumen < 7) 
 			{
 				tv.volumen++ ;
 			}
@@ -50,7 +50,7 @@ public class Control {
 	}
 	public void volumenDown() {
 		if (tv.estado == true) {
-			if (tv.volumen <= 7 && tv.volumen > 0) 
+			if (tv.volumen > 0) 
 			{
 				tv.volumen-- ;
 			}
