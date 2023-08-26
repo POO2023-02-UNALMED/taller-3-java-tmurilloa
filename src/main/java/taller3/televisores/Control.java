@@ -24,7 +24,7 @@ public class Control {
 	public void canalUp() {
 		if(tv.estado == true)
 		{
-			if (tv.canal < 120 && tv.canal >= 1)
+			if (tv.canal < 120)
 			{
 				tv.canal++ ;
 			}
@@ -33,7 +33,7 @@ public class Control {
 	}
 	public void canalDown() {
 		if(tv.estado == true) {
-			if (tv.canal <= 120 && tv.canal > 1)
+			if (tv.canal > 1)
 			{
 				tv.canal-- ; 
 			}
@@ -42,7 +42,7 @@ public class Control {
 	
 	public void volumenUp() {
 		if (tv.estado) {
-			if (tv.volumen < 7 && tv.volumen >= 0) 
+			if (tv.volumen < 7) 
 			{
 				tv.volumen++ ;
 			}
@@ -50,7 +50,7 @@ public class Control {
 	}
 	public void volumenDown() {
 		if (tv.estado) {
-			if (tv.volumen > 0 && tv.volumen <= 7 ) 
+			if (tv.volumen > 0) 
 			{
 				tv.volumen-- ;
 			}
